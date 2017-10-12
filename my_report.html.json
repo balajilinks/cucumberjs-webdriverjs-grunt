@@ -1,0 +1,144 @@
+[
+  {
+    "description": "  As a user of Webdriverjs.com\n  I want to search keywords\n  So that I can see the results",
+    "keyword": "Feature",
+    "name": "Search",
+    "line": 1,
+    "id": "search",
+    "tags": [],
+    "uri": "features\\Search.feature",
+    "elements": [
+      {
+        "id": "search;search-feature",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Search feature",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the webdriver.js webpage",
+            "match": {
+              "location": "features\\step_definitions\\browser_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I search for \"Webdriverjs\"",
+            "match": {
+              "location": "features\\step_definitions\\browser_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see search results",
+            "match": {
+              "location": "features\\step_definitions\\browser_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\step_definitions\\hooks.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8676
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "  As a user of Webdriverjs.com\n  I want to search keywords\n  So that I can see the results",
+    "keyword": "Feature",
+    "name": "Search One feature",
+    "line": 1,
+    "id": "search-one-feature",
+    "tags": [],
+    "uri": "features\\Search1.feature",
+    "elements": [
+      {
+        "id": "search-one-feature;check-parallel",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Check Parallel",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the webdriver.js webpage",
+            "match": {
+              "location": "features\\step_definitions\\browser_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I search for \"Webdriverjs\"",
+            "match": {
+              "location": "features\\step_definitions\\browser_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see search results",
+            "match": {
+              "location": "features\\step_definitions\\browser_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\step_definitions\\hooks.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7279
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
