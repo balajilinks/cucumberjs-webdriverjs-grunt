@@ -1,9 +1,12 @@
 'use strict';
+
 var seleniumWebdriver = require('selenium-webdriver'),
     By = seleniumWebdriver.By,
     until = seleniumWebdriver.until;
-var {defineSupportCode} = require('cucumber');
 
+var googleHomePage = require('../pages/GoogleHomePage');
+
+var {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function({Given, When, Then, After}) {
 
@@ -19,5 +22,19 @@ defineSupportCode(function({Given, When, Then, After}) {
   Then('I should see search results', function () {
       this.driver.wait(until.elementTextIs(this.driver.findElement(By.css('.vl-main-header>h1')), "Search Results for: Webdriverjs"), 10000);
   });
+
+   When(/^I search Google for "([^"]*)"$/, function (searchQuery) {
+      // this.driver.get('http://www.google.co.uk/');
+      googleHomePage.navigateToGoogleHomePage(this);
+      this.driver.findElement(By.name('q')).sendKeys(searchQuery,seleniumWebdriver.Key.ENTER);
+   });
+
+   Then(/^I should see "([^"]*)" in the results$/, function (keywords) {
+
+   });
+
+   Then(/^I should see some results$/, function () {
+
+   });
 
 });

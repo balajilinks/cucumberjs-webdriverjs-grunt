@@ -1,6 +1,6 @@
 'use strict';
 
-require('chromedriver');
+// require('chromedriver');
 
 var seleniumWebdriver = require('selenium-webdriver'),
     By = seleniumWebdriver.By,

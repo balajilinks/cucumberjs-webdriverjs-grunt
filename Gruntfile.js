@@ -37,7 +37,7 @@ module.exports = function(grunt) {
     cucumberjs: {
       options: {
         format: 'html',
-        output: 'my_report.html',
+        output: './htmlreports/report.html',
         name: 'bootstrap'
      },
      my_features: []
